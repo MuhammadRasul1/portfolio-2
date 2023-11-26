@@ -1,0 +1,132 @@
+/* zones */
+
+.zones {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.zones__title {
+    font-family: Dela Gothic One;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.zones__title-green {
+    color: #33B0AA;
+}
+
+.zones__wrapper {
+    margin-top: 39px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.zones__main-img {
+    border-radius: 24px;
+    margin-right: 30px;
+    transition: transform 0.5s;
+}
+
+.zones__main-img:hover {
+    transform: scale(1.1);
+}
+
+.zones__subtitle {
+    color: #33B0AA;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 141.9%; 
+    text-transform: uppercase;
+}
+
+.zones__desc {
+    margin-top: 14px;
+    margin-bottom: 24px;
+    max-width: 525px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%; 
+}
+
+.zones__list {
+    list-style: none;
+    display: flex;
+    align-items: start;
+}
+
+.zones__item:not(:last-child) {
+    margin-right: 33px;
+}
+
+.zones__img {
+    border-radius: 12px;
+    transition: transform 0.5s;
+}
+
+.zones__img:hover {
+    transform: scale(1.2);
+}
+
+
+@include breakpoint-down(1100px) {
+    .zones__title {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .zones__wrapper {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .zones__main-img {
+        margin-right: 0;
+        margin-top: 30px;
+    }
+
+    .zones__subtitle {
+        text-align: center;
+    }
+
+    .zones__desc {
+        text-align: center;
+    }
+
+    .zones__btn {
+        width: 100%;
+    }
+    
+    .zones__list {
+        justify-content: center;
+    }  
+}
+
+@include breakpoint-down(500px) {
+    .zones {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    
+    .zones__title {
+        font-size: 30px;
+    }
+    
+    .zones__main-img {
+        width: 400px;
+        height: 184px;
+    }
+    
+    .zones__desc {
+        max-width: 400px; 
+    }
+    
+    .zones__item:not(:last-child) {
+        margin-right: 20px;
+    }
+}

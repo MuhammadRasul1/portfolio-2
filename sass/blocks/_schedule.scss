@@ -1,0 +1,40 @@
+/* schedule */
+
+.schedule {
+    background-image: url(../img/schedule-bg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 105px;
+    padding-bottom: 124px;
+}
+
+.schedule__title {
+    color: #33B0AA;
+    margin-bottom: 14px;
+    font-family: Dela Gothic One;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.schedule__desc {
+    max-width: 433px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%; 
+}
+
+@include breakpoint-down(500px) {
+    .schedule {
+        background-image: url(../img/schedule-mobile-bg-img.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 79px;
+        padding-bottom: 274px;
+    }
+    
+    .schedule__title {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+}

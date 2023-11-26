@@ -1,0 +1,121 @@
+/* team */
+
+.team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.team__title {
+    margin-bottom: 39px;
+    font-family: Dela Gothic One;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.team__list {
+    list-style: none;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    column-gap: 30px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team__item {
+    position: relative;
+    width: 245px;
+    height: 350px;
+    transition: transform 0.5s;
+}
+
+.team__item:hover {
+    transform: scale(1.1);
+}
+
+.team__img {
+    position: absolute;
+    width: 245px;
+    height: 350px;
+    z-index: 9;
+    background-repeat: no-repeat;
+    border-radius: 28px;
+}
+
+.team__wrapper {
+    z-index: 10;
+    position: relative;
+    padding: 20px;
+    padding-top: 264px;
+}
+
+.team__name {
+    margin-bottom: 6px;
+    color: #33B0AA;
+    font-family: Dela Gothic One;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}   
+
+.team__text {
+    max-width: 208px;
+    opacity: 0.6;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 140%; 
+}
+
+.team__img--foto-one {
+    background-image: url(../img/team-img\(1\).jpg);
+}
+
+.team__img--foto-two {
+    background-image: url(../img/team-img\(2\).jpg);
+}
+
+.team__img--foto-three {
+    background-image: url(../img/team-img\(3\).jpg);
+}
+
+.team__img--foto-four {
+    background-image: url(../img/team-img\(4\).jpg);
+}
+
+.team__img--foto-five {
+    background-image: url(../img/team-img\(5\).jpg);
+}
+
+.team__img--foto-six {
+    background-image: url(../img/team-img\(6\).jpg);
+}
+
+.team__img--foto-seven {
+    background-image: url(../img/team-img\(7\).jpg);
+}
+
+.team__img--foto-eight {
+    background-image: url(../img/team-img\(8\).jpg);
+}
+
+@include breakpoint-down(565px) {
+    .team__list {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .team__item {
+        width: 200px;
+        height: 300px;
+    }
+    
+    .team__img {
+        width: 200px;
+        height: 300px;
+    }
+    .team__wrapper {
+        padding-top: 200px;
+    }
+}

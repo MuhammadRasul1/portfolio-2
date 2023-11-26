@@ -1,0 +1,126 @@
+/* .modal-main-contact */
+
+
+.modal-main-contact {
+    display: none;
+}
+
+.modal-main-contact.js-modal-main-contact {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    padding: 60px;
+    overflow: scroll;
+    z-index: 13;
+    top: 0;
+    left: 0;
+    background: #00100F;
+}
+
+.modal-main-contact__btn-close {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.modal-main-contact__btn-close span {
+    position: absolute;
+    width: 25px;
+    height: 1px;
+    left: 0;
+    border-radius: 1px;
+    background: #fff;
+    transition: transform .5s, opacity .5s;
+}
+
+.modal-main-contact__btn-close span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.modal-main-contact__btn-close span:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
+.modal-main-contact__title {
+    max-width: 493px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Dela Gothic One;
+    font-size: 30px;
+    color: aqua;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.modal-main-contact__desc {
+    max-width: 463px;
+    margin: 0 auto;
+    margin-top: 14px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+}
+
+.modal-main-contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-main-contact__form-wrapper {
+    margin-bottom: 20px;
+}
+
+.modal-main-contact__input {
+    width: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    padding-left: 20px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(181, 181, 181, 0.20) 100%);
+    backdrop-filter: blur(15px);
+}
+
+.modal-main-contact__input::placeholder {
+    color: wheat;
+}
+
+@include breakpoint-down(500px) {
+    .modal-main-contact__title {
+        font-size: 25px;
+    }
+}
+
+// .modal-main-contact {
+// }
+// .modal-main-contact__btn-close {
+// }
+// .modal-main-contact__title {
+// }
+// .modal-main-contact__desc {
+// }
+// .modal-main-contact__form {
+// }
+// .modal-main-contact__form-wrapper {
+// }
+// .modal-main-contact__input {
+// }
+// .modal-main-contact__input--active {
+// }
+// .modal-main-contact__btn {
+// }
+// .btn {
+// }
+// .btn--green {
+// }

@@ -1,0 +1,32 @@
+/* schedule-info */
+
+.schedule-info {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+@include breakpoint-down(700px) {
+    .schedule-info {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .schedule-info__img {
+        width: 700px;
+        height: 1000px;
+    }
+}
+
+@include breakpoint-down(550px) {
+    .schedule-info__img {
+        width: 550px;
+        height: 700px;
+    }
+}
+
+@include breakpoint-down(360px) {
+    .schedule-info__img {
+        width: 328px;
+        height: 368px;
+    }
+}

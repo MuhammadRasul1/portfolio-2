@@ -1,0 +1,140 @@
+/* fitness-testing */
+
+.fitness-testing {
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+
+.fitness-testing__wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.fitness-testing__wrapper:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.fitness-testing__img {
+    border-radius: 24px;
+}
+
+.fitness-testing__title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 141.9%; 
+    text-transform: uppercase;
+}
+
+.fitness-testing__desc {
+    margin-top: 14px;
+    margin-bottom: 12px;
+    max-width: 525px;
+    opacity: 0.8;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+}
+
+.fitness-testing__desc--active {
+    max-width: 339px;
+}
+
+.fitness-testing__list {
+    opacity: 0.8;
+}
+
+.fitness-testing__item {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+}
+
+.fitness-testing__item:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.fitness-testing__desc-link {
+    color: white;
+    opacity: 0.8;
+}
+
+@include breakpoint-down(1080px) {
+    .fitness-testing {
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
+    
+    .fitness-testing__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+    }
+    
+    .fitness-testing__wrapper:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .fitness-testing__wrapper:nth-child(even) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .fitness-testing__img {
+        border-radius: 24px;
+    }
+
+    .fitness-testing__right {
+        margin-top: 30px;
+    }
+    
+    .fitness-testing__title {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 141.9%; 
+        text-transform: uppercase;
+    }
+    
+    .fitness-testing__desc {
+        margin-top: 14px;
+        margin-bottom: 12px;
+        max-width: 525px;
+        opacity: 0.8;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; 
+    }
+    
+    .fitness-testing__desc--active {
+        max-width: 339px;
+    }
+    
+    .fitness-testing__list {
+        opacity: 0.8;
+    }
+    
+    .fitness-testing__item {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; 
+    }
+    
+    .fitness-testing__item:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    
+    .fitness-testing__desc-link {
+        color: white;
+        opacity: 0.8;
+    }    
+}

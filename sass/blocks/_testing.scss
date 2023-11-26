@@ -1,0 +1,34 @@
+/* testing */
+
+
+.testing-hero {
+    background-image: url(../img/main-services\(9\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 84px;
+    padding-bottom: 84px;
+}
+
+.testing-hero__title {
+    font-family: Dela Gothic One;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.testing-hero__text {
+    margin-top: 14px;
+    margin-bottom: 30px;
+    max-width: 555px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+}
+
+@include breakpoint-down(480px) {
+    .testing-hero__title {
+        font-size: 30px;
+    }
+}

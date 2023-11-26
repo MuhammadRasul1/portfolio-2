@@ -1,0 +1,60 @@
+/* banner */
+
+.banner {
+    background-image: url(../img/about-club-bgimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 130px;
+    padding-bottom: 170px;
+}
+
+.banner__title {
+    margin: 0 auto;
+    max-width: 647px;
+    text-align: center;
+    font-family: Dela Gothic One;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.banner__title-green {
+    color: #33B0AA;
+    text-align: center;
+    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.10);
+    font-family: Dela Gothic One;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.banner__btn {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 56px;
+    justify-content: center;
+}
+
+@include breakpoint-down(550px) {
+    .banner {
+        padding-top: 220px;
+        padding-bottom: 82px;
+    }
+    
+    .banner__title {
+        font-size: 30px;
+    }
+    
+    .banner__title-green {
+        font-size: 30px;
+    }
+    
+    .banner__btn {
+        margin-top: 42px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+}

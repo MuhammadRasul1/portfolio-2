@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Galaxy - О клубе</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="container header__wrapper">
+            <button class="header__burger-btn js-burger-btn" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a class="header__logo" href="index.html">
+                <img class="header__logo" src="img/icon/logo.png" alt="Magic Galaxy" width="155" height="42">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="about-club.html">О клубе</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="services.html">Услуги</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="schedule.html">Расписание</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="trainer.html">Тренеры</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="banner">
+            <div class="container">
+                <h1 class="banner__title"><span class="banner__title-green">Moreon Fitness</span> откроет для вас новые возможности</h1>
+                <button class="banner__btn btn btn--green js-modal-main-contact-btn">Узнать подробнее</button>
+            </div>
+        </section>
+        <section class="about-the-club" data-aos="flip-up">
+            <div class="container">
+                <h2 class="about-the-club__title">Все, что нужно для <span class="about-the-club__title-green">эффективных тренировок</span></h2>
+                <p class="about-the-club__text">Многофункциональный отдых включает в себя тренировки, отдых и развлечения</p>
+                <ul class="about-the-club__list">
+                    <li class="about-the-club__item" data-aos="flip-right">
+                        <img class="about-the-club__img" src="img/spa-centr.jpg" alt="Спа-центр" width="525" height="294">
+                        <div class="about-the-club__wrapper about-the-club__wrapper--odd">
+                            <h3 class="about-the-club__subtitle">Спа-центр</h3>
+                            <p class="about-the-club__desc">«Мореон SPA» — уникальный банный спа-комплекс в стиле острова Санторини. Это самое большое спа-пространство в Ташкенте, где можно отдохнуть от повседневного стресса. Здесь можно посетить бани и сауны, подышать в соляной пещере, пройтись по целительной дорожке Кнайпа, поплавать в бассейне, полежать в джакузи, а также воспользоваться спа-процедурами.</p>
+                        </div>
+                    </li>
+                    <li class="about-the-club__item" data-aos="flip-left">
+                        <img class="about-the-club__img" src="img/kafe.jpg" alt="Кафе и рестораны" width="525" height="294">
+                        <div class="about-the-club__wrapper about-the-club__wrapper--even">
+                            <h3 class="about-the-club__subtitle">Кафе и рестораны</h3>
+                            <p class="about-the-club__desc">После тренировки вы сможете перекусить и отдохнуть в ресторанах и кафе. В фитнесе находятся собственные барные зоны с разнообразным меню. Также в холле комплекса расположены рестораны «Порт» и «Остров».</p>
+                        </div>
+                    </li>
+                    <li class="about-the-club__item" data-aos="flip-right">
+                        <img class="about-the-club__img" src="img/reception.jpg" alt="Ресепшн" width="525" height="294">
+                        <div class="about-the-club__wrapper about-the-club__wrapper--odd">
+                            <h3 class="about-the-club__subtitle">Ресепшн</h3>
+                            <p class="about-the-club__desc">При входе в Moreon Fitness Вас встретят и помогут с любым вопросом на ресепшене. Радушный коллектив фитнес-центра проведет экскурсию по комплексу. Также вы можете связаться с нами по телефону +998 (71) 207-71-71</p>
+                        </div>
+                    </li>
+                    <li class="about-the-club__item" data-aos="flip-left">
+                        <img class="about-the-club__img" src="img/sales-departament.jpg" alt="Отдел продаж" width="525" height="294">
+                        <div class="about-the-club__wrapper about-the-club__wrapper--even">
+                            <h3 class="about-the-club__subtitle">Отдел продаж</h3>
+                            <p class="about-the-club__desc">По вопросам оформления карты и всем расценкам обращайтесь в отдел продаж.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="stock">
+            <div class="container">
+                <h2 class="stock__title">Акции</h2>
+                <ul class="stock__list">
+                    <li class="stock__item" data-aos="flip-up">
+                        <a class="stock__img-link" href="#">
+                            <img class="stock__img" src="img/stock-premium.jpg" alt="премиум фитнесс" width="340" height="340">
+                        </a>
+                    </li>
+                    <li class="stock__item" data-aos="flip-up">
+                        <a class="stock__img-link" href="#">
+                            <img class="stock__img" src="img/stock-present.jpg" alt="Тренируйся вместе и получи месяц в подарок" width="340" height="340">
+                        </a>
+                    </li>
+                    <li class="stock__item" data-aos="flip-up">
+                        <a class="stock__img-link" href="#">
+                            <img class="stock__img" src="img/stock-body-art.jpg" alt="презентация новой студии body art" width="340" height="340">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="zones" data-aos="flip-down">
+            <div class="container">
+                <h2 class="zones__title"><span class="zones__title-green">Зоны</span> фитнес клуба</h2>
+                <div class="zones__wrapper">
+                    <img class="zones__main-img" src="img/zones-img(1).jpg" alt="Gym" width="525" height="294">
+                    <div class="zones__wrapper-right">
+                        <h3 class="zones__subtitle">Тренажерный зал</h3>
+                        <p class="zones__desc">Тренажерный зал оборудован гантельным рядом (от 1 до 40 кг), множеством силовых тренажеров и набором штанг. Под каждую группу мышц есть как минимум 5 разновидностей оборудования.</p>
+                        <button class="zones__btn btn btn--green js-btn-modal">Записаться на гостевой визит</button>
+                    </div>
+                </div>
+                <ul class="zones__list">
+                    <li class="zones__item">
+                        <img class="zones__img" src="img/zones-img(2).jpg" alt="pool" width="106" height="81">
+                    </li>
+                    <li class="zones__item">
+                        <img class="zones__img" src="img/zones-img(3).jpg" alt="treadmill" width="106" height="81">
+                    </li>
+                    <li class="zones__item">
+                        <img class="zones__img" src="img/zones-img(4).jpg" alt="gym muscle" width="106" height="81">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="club-cards">
+            <div class="container">
+                <h2 class="club-cards__title">В каждой <span class="club-cards__title-green">клубной карте</span></h2>
+                <ul class="club-cards__list">
+                    <li class="club-cards__item" data-aos="flip-up">
+                        <img class="club-cards__img" src="img/icon/club-cards(1).svg" alt="Тренажерный зал" width="108" height="92">
+                        <h3 class="club-cards__subtitle">Тренажерный зал</h3>
+                    </li>
+                    <li class="club-cards__item" data-aos="flip-left">
+                        <img class="club-cards__img" src="img/icon/club-cards(2).svg" alt="Групповые программы" width="108" height="92">
+                        <h3 class="club-cards__subtitle">Групповые программы</h3>
+                    </li>
+                    <li class="club-cards__item" data-aos="flip-right">
+                        <img class="club-cards__img" src="img/icon/club-cards(3).svg" alt="Бассейн" width="108" height="92">
+                        <h3 class="club-cards__subtitle">Бассейн</h3>
+                    </li>
+                    <li class="club-cards__item" data-aos="flip-down">
+                        <img class="club-cards__img" src="img/icon/club-cards(4).svg" alt="Вводные тренировки" width="108" height="92">
+                        <h3 class="club-cards__subtitle">Вводные тренировки</h3>
+                    </li>
+                    <li class="club-cards__item" data-aos="flip-down">
+                        <img class="club-cards__img" src="img//icon/club-cards(3).svg" alt="Единоборства" width="108" height="92">
+                        <h3 class="club-cards__subtitle">Занятия с тренером</h3>
+                    </li>
+                    <li class="club-cards__item" data-aos="flip-up">
+                        <img class="club-cards__img" src="img/icon/club-cards(6).svg" alt="Бесплатная парковка" width="108" height="92">
+                        <h3 class="club-cards__subtitle">Бесплатная парковка</h3>
+                    </li>
+                    <li class="club-cards__item" data-aos="flip-right">
+                        <img class="club-cards__img" src="img/icon/club-cards(7).svg" alt="Клубная жизнь" width="108" height="92">
+                        <h3 class="club-cards__subtitle">Клубная жизнь</h3>
+                    </li>
+                    <li class="club-cards__item" data-aos="flip-left">
+                        <img class="club-cards__img" src="img/icon/club-cards(8).svg" alt="Фитнес диагностика" width="108" height="92">
+                        <h3 class="club-cards__subtitle">Фитнес диагностика</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="contacts" data-aos="flip-right">
+            <div class="container contacts__wrapper">
+                <div class="contacts__left">
+                    <h2 class="contacts__title">Контакты</h2>
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <p class="contacts__text">Адрес:</p>
+                            <a class="contacts__link" href="#">Ташкент, Чиланзарский р-н, ул. Загарлик 46а</a>
+                        </li>
+                        <li class="contacts__item">
+                            <p class="contacts__text">Телефон:</p>
+                            <a class="contacts__link" href="#">998 (71) 207-71-71</a>
+                        </li>
+                        <li class="contacts__item">
+                            <p class="contacts__text">E-mail:</p>
+                            <a class="contacts__link" href="mailto:info@magicgalaxy.uz">info@magicgalaxy.uz</a>
+                        </li>
+                    </ul>
+                </div>
+                <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11994.927963594298!2d69.1754085!3d41.271171!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8993912a3139%3A0xae28dcf419029c8!2sMagic%20Galaxy%20Wellness%20and%20Sport%20Center!5e0!3m2!1sru!2s!4v1700758267474!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" data-aos="flip-right">
+        <div class="container">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a class="footer__logo" href="index.html">
+                        <img class="footer__logo-img" src="img/icon/logo.png" alt="Magic Galaxy" width="117" height="32">
+                    </a>
+                    <p class="footer__text footer__text--active">Время работы:</p>
+                    <div class="footer__text-wrapper">
+                        <p class="footer__text">Будни: 07:00 - 23:00</p>
+                        <p class="footer__text">Бассейн: 07:00 - 23:00</p>
+                    </div>
+                    <div class="footer__text-wrapper">
+                        <p class="footer__text">Выходные: 09:00 - 23:00</p>
+                        <p class="footer__text">Бассейн: 09:00 - 23:00</p>
+                    </div>
+                </li>
+                <li class="footer__item">
+                    <ul class="footer__list-link">
+                        <li class="footer__item-link">
+                            <a  class="footer__text footer__text--link" href="#">Тренажерный зал</a>
+                        </li>
+                        <li class="footer__item-link">
+                            <a  class="footer__text footer__text--link" href="#">Спортивный бассейн</a>
+                        </li>
+                        <li class="footer__item-link">
+                            <a  class="footer__text footer__text--link" href="#">Персональный тренинг</a>
+                        </li>
+                        <li class="footer__item-link">
+                            <a  class="footer__text footer__text--link" href="#">Аэробные и кардио программы</a>
+                        </li>
+                        <li class="footer__item-link">
+                            <a  class="footer__text footer__text--link" href="#">Скаладром для детей</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    <ul class="footer__list-link">
+                        <li class="footer__item-link">
+                            <a  class="footer__text footer__text--link" href="#">Единоборства</a>
+                        </li>
+                        <li class="footer__item-link">
+                            <a  class="footer__text footer__text--link" href="#">Танцы</a>
+                        </li>
+                        <li class="footer__item-link">
+                            <a  class="footer__text footer__text--link" href="fitness-testing.html">Фитнес-тестирование</a>
+                        </li>
+                        <li class="footer__item-link">
+                            <a  class="footer__text footer__text--link" href="#">Вакансии</a>
+                        </li>
+                        <li class="footer__item-link">
+                            <a  class="footer__text footer__text--link" href="#">Подарочный сертификат</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    <p class="footer__text">Ташкент, Чиланзарский р-н, ул. Загарлик 46а</p>
+                    <a class="footer__text footer__text--link" href="#">+998 (71) 207-71-71</a>
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item">
+                            <a href="https://www.instagram.com/magicgalaxy.uz/" class="footer__social-img-link">
+                                <img src="img/icon/instagram.svg" alt="instagram" width="16" height="15">
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="https://m.facebook.com/p/Magic-Galaxy-Health-vs-Sport-Centre-100085870572046/" class="footer__social-img-link">
+                                <img src="img/icon/Facebook.svg" alt="facebook" width="9" height="17">
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="#" class="footer__social-img-link">
+                                <img src="img/icon/VK.svg" alt="Vk" width="19" height="11">
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="footer__text footer__text--active">Скачать приложение</p>
+                    <div class="footer__application-wrapper">
+                        <a class="footer__application-link" href="#">
+                            <img class="footer__application-img" src="img/icon/google-play.jpg" alt="google-play" width="113" height="37">
+                        </a>
+                        <a class="footer__application-link" href="#">
+                            <img class="footer__application-img" src="img/icon/app-store.jpg" alt="app-store" width="113" height="37">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- modal -->
+    <div class="modal">
+        <button class="modal__btn-close">
+            <span></span>
+            <span></span>
+        </button>
+        <form class="modal__form" method="get">
+            <h2 class="modal__form-title">Расчитайте стоимоть вашей <span class="modal__form-title-green">клубной карты</span></h2>
+            <ul class="modal__form-list">
+                <li class="modal__form-item">
+                    <strong class="modal__form-subtitle">Какие зоны вы хотите посетить:</strong>
+                    <div class="modal__form-wrapper">
+                        <input class="modal__form-input" type="radio" name="zones" id="fitness" value="fitness" required>
+                        <label class="modal__form-label" for="fitness">Фитнесс</label>
+                    </div>
+                    <div class="modal__form-wrapper">
+                        <input class="modal__form-input" type="radio" name="zones" id="thermal" value="thermal" required>
+                        <label class="modal__form-label" for="thermal">Термы+Фитнес</label>
+                    </div>
+                    <div class="modal__form-wrapper">
+                        <input class="modal__form-input" type="radio" name="zones" id="spa" value="spa" required>
+                        <label class="modal__form-label" for="spa">СПА+Фитнес</label>
+                    </div>
+                    <div class="modal__form-wrapper">
+                        <input class="modal__form-input" type="radio" name="zones" id="fitness-all" value="fitness+thermal+Spa" required>
+                        <label class="modal__form-label" for="fitness-all">Фитнес+Термы+СПА</label>
+                    </div>
+                </li>
+                <li class="modal__form-item">
+                    <strong class="modal__form-subtitle">Нужна ли рассрочка?</strong>
+                    <div class="modal__form-wrapper">
+                        <input class="modal__form-input" type="radio" name="installment plan" id="yes" value="Да" required>
+                        <label class="modal__form-label" for="yes">Да</label>
+                    </div>
+                    <div class="modal__form-wrapper">
+                        <input class="modal__form-input" type="radio" name="installment plan" id="no" value="Нет" required>
+                        <label class="modal__form-label" for="no">Нет</label>
+                    </div>
+                    <div class="modal__form-wrapper">
+                        <input class="modal__form-input" type="radio" name="installment plan" id="answer" value="Затрудняюсь ответить" required>
+                        <label class="modal__form-label" for="answer">Затрудняюсь ответить</label>
+                    </div>
+                </li>
+                <li class="modal__form-item">
+                    <strong class="modal__form-subtitle">На какой срок нужна клубная карта?</strong>
+                    <div class="modal__form-wrapper">
+                        <input class="modal__form-input" type="radio" name="club-cards" id="year" value="1 год" required>
+                        <label class="modal__form-label" for="year">1 год</label>
+                    </div>
+                    <div class="modal__form-wrapper">
+                        <input class="modal__form-input" type="radio" name="club-cards" id="six-year" value="6 месяцев" required>
+                        <label class="modal__form-label" for="six-year">6 месяцев</label>
+                    </div>
+                    <div class="modal__form-wrapper">
+                        <input class="modal__form-input" type="radio" name="club-cards" id="three-year" value="3 месяца" required>
+                        <label class="modal__form-label" for="three-year">3 месяца</label>
+                    </div>
+                    <div class="modal__form-wrapper">
+                        <input class="modal__form-input" type="radio" name="club-cards" id="answer-year" value="Затрудняюсь ответить" required>
+                        <label class="modal__form-label" for="answer-year">Затрудняюсь ответить</label>
+                    </div>
+                </li>
+                <li class="modal__form-item">
+                    <strong class="modal__form-subtitle">Когда удобно посещать занятия?</strong>
+                    <div class="modal__form-wrapper">
+                        <input class="modal__form-input" type="radio" name="attend-classes" id="morning" value="утром" required>
+                        <label class="modal__form-label" for="morning">Утром</label>
+                    </div>
+                    <div class="modal__form-wrapper">
+                        <input class="modal__form-input" type="radio" name="attend-classes" id="day" value="Днем" required>
+                        <label class="modal__form-label" for="day">Днем</label>
+                    </div>
+                    <div class="modal__form-wrapper">
+                        <input class="modal__form-input" type="radio" name="attend-classes" id="evening" value="Вечером" required>
+                        <label class="modal__form-label" for="evening">Вечером</label>
+                    </div>
+                    <div class="modal__form-wrapper">
+                        <input class="modal__form-input" type="radio" name="attend-classes" id="anytime" value="В любое время" required>
+                        <label class="modal__form-label" for="anytime">В любое время</label>
+                    </div>
+                </li>
+            </uL>
+            <button class="modal__form-btn btn btn--grey js-modal-contact-btn" type="button">Перейти к последнему шагу</button>
+        </form>
+    </div>
+    <div class="modal-contact">
+        <button class="modal-contact__btn-close">
+            <span></span>
+            <span></span>
+        </button>
+        <h2 class="modal-contact__title">Контактные данные</h2>
+        <p class="modal-contact__desc">Оставьте свои контактные данные и мы вам перезвоним</p>
+        <form class="modal-contact__form" method="get">
+            <div class="modal-contact__form-wrapper">
+                <input class="modal-contact__input" type="text" name="name" id="contact-name" aria-label="name" placeholder="Напишите ваше Ф.И.О" minlength="2" required>
+            </div>
+            <div class="modal-contact__form-wrapper">
+                <input class="modal-contact__input" type="number" name="number" id="number" aria-label="telephone-number" placeholder="+ 998" minlength="8" required>
+            </div>
+            <button class="modal-contact__btn btn btn--green" type="submit">Отправить заявку на звонок</button>
+        </form>
+    </div>
+    <div class="modal-main-contact">
+        <button class="modal-main-contact__btn-close">
+            <span></span>
+            <span></span>
+        </button>
+        <h2 class="modal-main-contact__title">Оставьте свои контактные данные</h2>
+        <p class="modal-main-contact__desc">Мы расскажем вам о всех преимуществах клубной карты Moreon Fitness</p>
+        <form class="modal-main-contact__form" method="get">
+            <div class="modal-main-contact__form-wrapper">
+                <input class="modal-main-contact__input" type="text" name="name" id="main-contact-name" aria-label="name" placeholder="Напишите ваше Ф.И.О" minlength="2" required>
+            </div>
+            <div class="modal-main-contact__form-wrapper">
+                <input class="modal-main-contact__input" type="number" name="number" id="main-contact-number" aria-label="telephone-number" placeholder="+ 998" required>
+            </div>
+            <div class="modal-main-contact__form-wrapper">
+                <textarea class="modal-main-contact__input modal-main-contact__input--active" name="message" id="message" cols="30" rows="10" placeholder="Напишите ваш комментарий"></textarea>
+            </div>
+            <button class="modal-main-contact__btn btn btn--green" type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

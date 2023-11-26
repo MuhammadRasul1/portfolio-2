@@ -1,0 +1,133 @@
+/* hero */
+
+.hero {
+    padding-top: 61px;
+    padding-bottom: 106px;
+    background-image: url(../img/hero-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__title {
+    max-width: 551px;
+    font-family: Dela Gothic One;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hero__title-green {
+    color: #33B0AA;
+}
+
+.hero__left-list {
+    list-style: none;
+    margin-top: 27px;
+    margin-bottom: 47px;
+}
+
+.hero__left-item {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%; 
+}
+
+
+.hero__left-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.hero__btn-wrapper {
+    display: flex;
+}
+
+.hero__btn-active {
+    margin-left: 30px;
+    color: black;
+    background-color: aqua;
+}
+
+.hero__list {
+    list-style: none;
+}
+
+.hero__item {
+    color: #28B0A9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 36px 20px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(15px);
+}
+
+.hero__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.hero__text {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 142%; 
+}
+
+.hero__desc {
+    max-width: 122px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 142%;
+}
+
+@include breakpoint-down(730px) {
+    .hero {
+        padding-top: 80px;
+        padding-bottom: 80px;    
+    }
+    
+    .hero__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero__title {
+        max-width: 400px;
+        font-size: 30px;
+    }
+    
+    .hero__btn-wrapper {
+        max-width: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hero__btn--grey {
+        margin-top: 36px;
+        margin-left: 0;
+    }
+    
+    .hero__list {
+        margin-top: 40px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero__item {
+        padding: 36px 96px;
+    } 
+
+    .hero__btn-active {
+        margin-top: 20px;
+    }
+}

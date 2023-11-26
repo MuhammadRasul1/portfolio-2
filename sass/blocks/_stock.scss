@@ -1,0 +1,50 @@
+/* stock */
+
+.stock {
+    background-image: url(../img/icon/news-decoration.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.stock__title {
+    margin-bottom: 30px;
+    font-family: Dela Gothic One;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.stock__list {
+    list-style: none;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.stock__img-link {
+    display: inline-block;
+}
+
+.stock__img {
+    border-radius: 14px;
+    transition: transform 0.5s;
+}
+
+.stock__img:hover {
+    transform: scale(1.1);
+}
+
+@include breakpoint-down(1100px) {
+    .stock__title {
+        text-align: center;
+    }
+
+    .stock__list {
+        column-gap: 20px;
+        row-gap: 20px;
+        justify-content: center;
+    }
+}

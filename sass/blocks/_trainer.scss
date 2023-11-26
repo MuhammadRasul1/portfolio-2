@@ -1,0 +1,127 @@
+/* trainer */
+
+.trainer {
+    padding-top: 70px;
+    padding-bottom: 120px;
+    background: linear-gradient(90deg, rgba(0, 22, 21, 0.97) 34.84%, rgba(0, 22, 21, 0.95) 100%);
+}
+
+.trainer__wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.trainer__img {
+    border-radius: 24px;
+}
+
+.trainer__list {
+    margin-top: 40px;
+    list-style: none;
+}
+
+.trainer__item {
+    opacity: 0.6;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 141.9%; 
+}
+
+.trainer__item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.trainer__link {
+    display: inline-block;
+    max-width: 266px;
+    color: white;
+    text-decoration: none;
+}
+
+.trainer__title {
+    margin-bottom: 14px;
+    font-family: Dela Gothic One;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.trainer__text {
+    max-width: 218px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%; 
+}
+
+.trainer__text-link {
+    color: white;
+    text-decoration: none;
+}
+
+.trainer__right-wrapper:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.trainer__subtitle {
+    margin-bottom: 14px;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 141.9%; 
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.trainer__desc {
+    max-width: 675px;
+    opacity: 0.8;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%; 
+}
+
+.trainer__sign-up {
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(181, 181, 181, 0.20) 100%);
+    backdrop-filter: blur(15px);
+}
+
+.trainer__sign-up__title {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 141.9%; 
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.trainer__sign-up__desc {
+    max-width: 615px;
+    margin-top: 14px;
+    margin-bottom: 28px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%; 
+}
+
+@include breakpoint-down(1050px) {
+    .trainer__wrapper {
+        flex-direction: column;
+    }   
+}
+
+@include breakpoint-down(510px) {
+    .trainer {
+        padding-bottom: 80px;
+    }
+    
+    .trainer__title {
+        font-size: 30px;
+    }
+ 
+    .trainer__sign-up {
+        padding: 20px;
+    }    
+}

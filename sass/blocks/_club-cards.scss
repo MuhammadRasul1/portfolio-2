@@ -1,0 +1,98 @@
+/* club-cards */
+
+.club-cards {
+    background-image: url(../img/icon/news-decoration.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.club-cards__title {
+    margin-bottom: 39px;
+    font-family: Dela Gothic One;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.club-cards__title-green {
+    color: #33B0AA;
+}
+
+.club-cards__list {
+    list-style: none;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.club-cards__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 247px;
+    height: 192px;
+    border-radius: 24px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(181, 181, 181, 0.20) 100%);
+    backdrop-filter: blur(15px);
+    padding: 22px 48px;
+    transition: transform 0.5s;
+}
+
+.club-cards__item:hover {
+    transform: scale(1.2);
+    background-color: #c929b1;
+}
+
+.club-cards__subtitle {
+    margin-top: 14px;
+    max-width: 150px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%; 
+}
+
+@include breakpoint-down(1100px) {
+    .club-cards__list {
+        list-style: none;
+        display: flex;
+        align-items: start;
+        justify-content: flex-start;
+    }  
+}
+
+@include breakpoint-down(820px) {
+    .club-cards__title {
+        text-align: center;
+    }
+
+    .club-cards__list {
+        list-style: none;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+}
+
+@include breakpoint-down(620px) {
+    .club-cards {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    
+    .club-cards__title {
+        font-size: 30px;
+    }
+}
+
+@include breakpoint-down(554px) {
+    .club-cards__item {
+        width: 156px;
+        height: 192px;
+    }
+}

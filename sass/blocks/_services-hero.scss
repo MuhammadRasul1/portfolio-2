@@ -1,0 +1,28 @@
+/* services-hero */
+
+.services-hero {
+    background-image: url(../img/services-hero-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 84px;
+    padding-bottom: 84px;
+}
+
+.services-hero__title {
+    font-family: Dela Gothic One;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.services-hero__text {
+    margin-top: 14px;
+    margin-bottom: 30px;
+    max-width: 555px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+}
+

@@ -1,0 +1,161 @@
+/* about-the-club */
+
+.about-the-club {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.about-the-club__title {
+    font-family: Dela Gothic One;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.about-the-club__title-green {
+    color: #33B0AA;
+    display: inline-block;
+}
+
+.about-the-club__text {
+    margin-top: 20px;
+    margin-bottom: 35px;
+    max-width: 463px;
+    font-size: 16px;
+    line-height: 140%; 
+}
+
+.about-the-club__list {
+    list-style: none;
+}
+
+.about-the-club__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-the-club__item:not(:last-child) {
+    margin-bottom: 94px;
+}
+
+.about-the-club__item:nth-child(even)  {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.about-the-club__wrapper--even {
+    margin-right: 122px;
+}
+
+.about-the-club__wrapper--odd {
+    margin-left: 122px;
+}
+
+.about-the-club__img {
+    border-radius: 24px;
+    transition: transform 0.5s;
+}
+
+.about-the-club__img:hover {
+    transform: scale(1.2);
+}
+
+.about-the-club__subtitle {
+    margin-bottom: 14px;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 141.9%; 
+    text-transform: uppercase;
+}
+
+.about-the-club__desc {
+    max-width: 432px;
+    font-size: 16px;
+    line-height: 140%; 
+}
+
+@include breakpoint-down(1100px) {
+
+    .about-the-club__wrapper--even {
+        margin-right: 10px;
+    }
+    
+    .about-the-club__wrapper--odd {
+        margin-left: 10px;
+    }
+    
+    .about-the-club__img {
+        width: 328px;
+        height: 185px;
+    }
+}
+
+
+@include breakpoint-down(800px) {
+    .about-the-club {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    
+    .about-the-club__title {
+        font-size: 30px;
+    }
+    
+    .about-the-club__text {
+        margin-top: 20px;
+        margin-bottom: 87px; 
+    }
+    
+    .about-the-club__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about-the-club__item:not(:last-child) {
+        margin-bottom: 89px;
+    }
+    
+    .about-the-club__item:nth-child(even)  {
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .about-the-club__wrapper--even {
+        margin-right: 0;
+    }
+    
+    .about-the-club__wrapper--odd {
+        margin-left: 0;
+    }
+    
+    .about-the-club__img {
+        margin-bottom: 20px;
+        width: 432px;
+        height: 185px;
+    }
+}
+
+@include breakpoint-down(600px) {
+    .about-the-club__item {
+        align-items: start;
+    }
+
+    .about-the-club__item:nth-child(even)  {
+        align-items: start;
+    }
+
+    .about-the-club__img {
+        margin-bottom: 20px;
+        width: 328px;
+        height: 185px;
+    }
+
+    .about-the-club__desc {
+        max-width: 328px;
+        font-size: 16px;
+        line-height: 140%; 
+    }
+}
